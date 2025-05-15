@@ -29,6 +29,6 @@ export const projects = [
         description: 'Next.js 활용한 Project',
         image: '/images/project-project.png',
         techStack: ['Next.js', 'Tailwind CSS'],
-        component: 'SpeechAppDetail',
+        component: 'ProjectDetail',
     }
 ];

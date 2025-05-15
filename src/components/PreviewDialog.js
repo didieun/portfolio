@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import BangkooDetail from './projectDetails/BangkooDetail';
 import YonoDetail from '@/components/projectDetails/YonoDetail';
 import TurtleDetail from "@/components/projectDetails/TurtleDetail";
+import ProjectDetail from "@/components/projectDetails/ProjectDetail";
 
 export default function PreviewDialog({ project, onClose }) {
     // 화면 스크롤 방지
@@ -24,6 +25,8 @@ export default function PreviewDialog({ project, onClose }) {
                 return <BangkooDetail />;
             case 'TurtleDetail':
                 return <TurtleDetail />;
+            case 'ProjectDetail':
+                return <ProjectDetail />;
             default:
                 return null;
         }
