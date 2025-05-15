@@ -6,6 +6,14 @@ import YonoDetail from '@/components/projectDetails/YonoDetail';
 import TurtleDetail from "@/components/projectDetails/TurtleDetail";
 
 export default function PreviewDialog({ project, onClose }) {
+    // 화면 스크롤 방지
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, []);
+
     if (!project) return null;
 
     const renderComponent = () => {
@@ -20,14 +28,6 @@ export default function PreviewDialog({ project, onClose }) {
                 return null;
         }
     };
-
-    // 화면 스크롤 방지
-    useEffect(() => {
-        document.body.style.overflow = 'hidden';
-        return () => {
-            document.body.style.overflow = '';
-        };
-    }, []);
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-4">

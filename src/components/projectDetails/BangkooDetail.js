@@ -177,8 +177,8 @@ export default function YonoDetail() {
                     <li>
                         <strong>문제 1: 검색 시 DB에 중복 저장</strong>
                         <ul className="list-none ml-6 space-y-1">
-                            <li><strong>원인:</strong> FormData.append("userId", userId) 와 API 파라미터 중복 전달</li>
-                            <li><strong>해결:</strong> FormData.append 제거 → searchByImage(formData, userId) 로 단일 전달, 백엔드 중복 처리 로직 보완</li>
+                            <li><strong>원인:</strong> {`FormData.append("userId", userId) 와 API 파라미터 중복 전달`}</li>
+                            <li><strong>해결:</strong> {`FormData.append 제거 → searchByImage(formData, userId) 로 단일 전달, 백엔드 중복 처리 로직 보완`}</li>
                         </ul>
                     </li>
 
