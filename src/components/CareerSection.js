@@ -45,7 +45,16 @@ export default function CareerSection() {
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold text-[#23486A]">{exp.company}</h3>
                                 <p className="text-sm text-gray-400 mb-2">{exp.period}</p>
-                                <p className="text-sm text-gray-600 mb-4">{exp.position}</p>
+                                <p className="text-sm text-gray-600 mb-1">{exp.introduction}</p>
+                                <p
+                                    className="text-sm text-gray-600 mb-4"
+                                    dangerouslySetInnerHTML={{ __html: exp.industry }}
+                                />
+                                <p className="text-sm text-gray-600 mb-1"><strong>담당직무: </strong>{exp.position}</p>
+                                <p
+                                    className="text-sm text-gray-600 mb-4"
+                                    dangerouslySetInnerHTML={{ __html: exp.detail }}
+                                />
 
 
                                 <ul className="border-l-2 border-gray-300 pl-4 space-y-2">
