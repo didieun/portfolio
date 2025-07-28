@@ -44,27 +44,27 @@ export default function YonoDetail() {
 
     return (
         <div className="text-sm text-gray-800 leading-relaxed">
-            <div className="flex">
+            <div className="flex flex-col md:flex-row items-start md:items-center">
                 <Image
-                    src={"/images/project-bangkoo.png"}
-                    alt="YONO 배너"
+                    src="/images/project-bangkoo.png"
+                    alt="방꾸 배너"
                     width={350}
                     height={150}
-                    className="mr-6"
+                    className="mb-4 md:mb-0 md:mr-6 w-full md:w-auto"
                 />
 
-                <div className="text-left ">
+                <div className="text-left w-full">
                     <p className="mb-2">
                         <strong className="text-lg text-[#23486A]">
                             방꾸 – AI 기반 가구 배치 서비스
                         </strong>
                         <br />
                         <span className="text-gray-500">
-                          2025.03.19 ~ 2025.04.30  / 참여인원: 총 5명
+                            2025.03.19 ~ 2025.04.30 / 참여인원: 총 5명
                         </span>
                     </p>
 
-                    <div className="flex flex-col items-start space-y-2">
+                    <div className="flex flex-col items-start space-y-2 text-sm">
                         <a
                             href="https://github.com/AI-X-Bangkoo/Bangkoo-Frontend"
                             target="_blank"
@@ -81,7 +81,6 @@ export default function YonoDetail() {
                         >
                             <FaGithub className="mr-2" /> Bangkoo-Backend 레포
                         </a>
-
                         <a
                             href="https://github.com/AI-X-Bangkoo/Bangkoo-AI"
                             target="_blank"
@@ -90,7 +89,6 @@ export default function YonoDetail() {
                         >
                             <FaGithub className="mr-2" /> Bangkoo-AI 레포
                         </a>
-
                         <a
                             href="https://www.youtube.com/watch?v=WQUKahTEBVA"
                             target="_blank"
@@ -99,17 +97,17 @@ export default function YonoDetail() {
                         >
                             <FaRegCaretSquareRight className="mr-2" /> Bangkoo 영상
                         </a>
-
                         <a
                             href="/docs/Bangkoo_Planning.pdf"
                             download
-                            className="px-4 py-2 bg-[#23486A] text-white rounded hover:bg-[#1f3d59] transition"
+                            className="mt-2 px-4 py-2 bg-[#23486A] text-white rounded hover:bg-[#1f3d59] transition"
                         >
                             기획서 다운로드
                         </a>
                     </div>
                 </div>
             </div>
+
 
             <hr className="mt-6 mb-6"/>
 

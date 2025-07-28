@@ -31,7 +31,7 @@ export default function ProjectsSection() {
                                     alt={project.title}
                                     width={500}
                                     height={300}
-                                    className="w-full h-[260px] object-cover"
+                                    className="w-full h-[180px] xs:h-[250px] sm:h-[400px] md:h-[270px] object-cover"
                                 />
                                 <div className="p-5">
                                     <h3 className="text-xl font-semibold mb-2">{project.title}</h3>

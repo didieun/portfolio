@@ -38,23 +38,23 @@ export default function ProjectDetail() {
 
     return (
         <div className="text-sm text-gray-800 leading-relaxed">
-            <div className="flex">
+            <div className="flex flex-col md:flex-row items-start md:items-center">
                 <Image
-                    src={"/images/project-project.png"}
-                    alt="YONO 배너"
+                    src="/images/project-project.png"
+                    alt="포트폴리오 배너"
                     width={350}
                     height={150}
-                    className="mr-6 border"
+                    className="mb-4 md:mb-0 md:mr-6 w-full md:w-auto border"
                 />
 
-                <div className="text-left ">
+                <div className="text-left w-full">
                     <p className="mb-2">
                         <strong className="text-lg text-[#23486A]">
                             Next.js 활용한 Portfolio
                         </strong>
                     </p>
 
-                    <div className="flex flex-col items-start space-y-2">
+                    <div className="flex flex-col items-start space-y-2 text-sm">
                         <a
                             href="https://github.com/AI-X-team-projects/turtle-dream-frontend"
                             target="_blank"
@@ -66,6 +66,7 @@ export default function ProjectDetail() {
                     </div>
                 </div>
             </div>
+
 
             <hr className="mt-6 mb-6"/>
 
@@ -92,7 +93,7 @@ export default function ProjectDetail() {
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;각 섹션과 요소에 자연스럽게 등장하는 애니메이션을 적용하여 더 풍부한 사용자 경험(UI/UX) 을 제공합니다.</span>
                     <li className="font-bold">프로젝트 상세 확인 기능</li>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;각 프로젝트 클릭 시 상세 설명과 작업 이미지가 포함된 다이얼로그가 열리도록 구현하였으며,
-이미지 클릭 시 확대      미리보기 기능도 함께 제공합니다.</span>
+                        이미지 클릭 시 확대 미리보기 기능도 함께 제공합니다.</span>
                     <li className="font-bold">반응형 웹 디자인</li>
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;데스크탑, 태블릿, 모바일 등 다양한 화면 크기에 대응하는 반응형 UI로 어떤 환경에서도 편리하게 이용 가능합니다.</span>
                 </ul>

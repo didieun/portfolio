@@ -50,23 +50,23 @@ export default function YonoDetail() {
 
     return (
         <div className="text-sm text-gray-800 leading-relaxed">
-            <div className="flex">
+            <div className="flex flex-col md:flex-row items-start md:items-center">
                 <Image
-                    src={"/images/project-yono.png"}
+                    src="/images/project-yono.png"
                     alt="YONO 배너"
                     width={350}
                     height={150}
-                    className="mr-6"
+                    className="mb-4 md:mb-0 md:mr-6 w-full md:w-auto"
                 />
 
-                <div className="text-left ">
+                <div className="text-left w-full">
                     <p className="mb-2">
                         <strong className="text-lg text-[#23486A]">
                             YONO – 절약 소비 유도 웹 플랫폼
                         </strong>
                         <br />
                         <span className="text-gray-500">
-                          2024.10.05 ~ 2025.02.10 / 참여인원: 총 5명
+                            2024.10.05 ~ 2025.02.10 / 참여인원: 총 5명
                         </span>
                     </p>
 
@@ -75,7 +75,7 @@ export default function YonoDetail() {
                             href="https://github.com/didieun/yono-main"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center hover:text-gray-700"
+                            className="flex items-center hover:text-gray-700 text-sm"
                         >
                             <FaGithub className="mr-2" /> yono-main 레포
                         </a>
@@ -83,20 +83,21 @@ export default function YonoDetail() {
                             href="https://github.com/didieun/yono-admin"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center hover:text-gray-700"
+                            className="flex items-center hover:text-gray-700 text-sm"
                         >
                             <FaGithub className="mr-2" /> yono-admin 레포
                         </a>
                         <a
                             href="/docs/YONO_Planning.pdf"
                             download
-                            className="px-4 py-2 bg-[#23486A] text-white rounded hover:bg-[#1f3d59] transition"
+                            className="mt-2 px-4 py-2 bg-[#23486A] text-white rounded hover:bg-[#1f3d59] transition text-sm"
                         >
                             기획서 다운로드
                         </a>
                     </div>
                 </div>
             </div>
+
 
             <hr className="mt-6 mb-6"/>
 
